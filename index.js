@@ -18,6 +18,7 @@ function login() {
             }
             else {
                 //if invalid then put message in the div with id 'error-message'
+                $("#password").focus();
                 $("#error-message").text("Password must be:  \na. consists only numbers, letters, and \"+\", \"@\" " +
                                                             "\nb. Is longer than 8 characters." +
                                                             "\nc. Contains at least one upper case letter." +
@@ -26,6 +27,7 @@ function login() {
             }
         } else {
             //if invalid then put message in the div with id 'error-message'
+            $("#email").focus();
             $("#error-message").text("Email is not valid");
         }
     }
