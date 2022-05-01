@@ -1,7 +1,7 @@
+For manually start wiremock, you can use this command:
 java -jar wiremock-jre8-standalone-2.33.2.jar --verbose
-npm install mocha chai chai-http supertest --save-dev
-npm install selenium-standalone --save-dev
-npm install selenium-webdriver
-npx selenium-standalone install && npx selenium-standalone start
-npm install -g chromedriver --save
+
+For install dependencies:
+npm install
+
 

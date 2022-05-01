@@ -1,0 +1,21 @@
+{
+    "request": {
+        
+        "method": "POST",
+        "url": "/login",
+        "bodyPatterns": [
+            {
+                "matchesJsonPath": "$[?(@.email == 'admin@admin.com' && @.password == '@Dmin1234')]"
+              }
+        ]
+    },
+
+    "response": {
+        "status": 200,
+        "headers": {
+            "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Methods" : "*"
+        },
+        "body": "Login Success!"
+    }
+  }

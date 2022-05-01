@@ -2,7 +2,7 @@
   "id": "5be7a7a3-d8a9-4022-9ea0-e6a30195f5ab",
   "version": "2.0",
   "name": "cs458-hw4-partb",
-  "url": "http://localhost:5500/",
+  "url": "http://localhost:5500/Part_1",
   "tests": [{
     "id": "33016a72-3516-4630-a8a6-f3c4fca037c8",
     "name": "bad_char",
@@ -10,7 +10,7 @@
       "id": "c3807caa-9473-415a-aa85-6c390fc6f3a9",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
@@ -206,7 +206,7 @@
       "id": "aa3f4077-833d-4e67-8ab0-ea7277bfee65",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
@@ -380,7 +380,7 @@
       "id": "186ca12f-bdee-43b4-80b8-463449727b40",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
@@ -522,7 +522,7 @@
       "id": "584387fc-62be-4317-aee6-74a845fe1970",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
@@ -664,7 +664,7 @@
       "id": "bea4fe71-38ab-4446-a31d-d71e6e2ebddf",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
@@ -806,7 +806,7 @@
       "id": "a532224c-0b0b-4658-b80a-4c17f7efd6e4",
       "comment": "",
       "command": "open",
-      "target": "http://localhost:5500/",
+      "target": "http://localhost:5500/Part_1",
       "targets": [],
       "value": ""
     }, {
