@@ -15,6 +15,29 @@ function login() {
             if(isValidPassword(password)) {
                 //if valid then put message in the div with id 'error-message'
                 $("#error-message").text("Inputs are correct");
+                //send an HTTP Post request to an imaginary authentication API
+                $.ajax({
+                    type: 'POST',
+                    //url to send the data to
+                    url: 'http://localhost:8080/login',
+                    //add data to the request body
+                    data: JSON.stringify({
+                        email: email,
+                        password: password
+                    }),
+                    //the type of data we expect back from the server
+                    //if the request succeeds
+                    success: function (data) {
+                        if (data == "Login Success!") {
+                            //if the user is authenticated then redirect to the home page
+                            $("#error-message").text("Login Success!");
+                        } else {
+                            console.log(data);
+                            //if the user is not authenticated then put message in the div with id 'error-message'
+                            $("#error-message").text("Invalid email or password");
+                        }
+                    }
+                });
             }
             else {
                 //if invalid then put message in the div with id 'error-message'
@@ -29,7 +52,7 @@ function login() {
                 */         
             }
             //replace the \n with <br>.
-            obj.html(obj.html().replace(/\n/g, '<br />'));
+            //obj.html(obj.html().replace(/\n/g, '<br />'));
         } else {
             //if invalid then put message in the div with id 'error-message'
             $("#email").focus();
