@@ -50,3 +50,9 @@
     right: 0;
     width: 60%;
   }
+
+  .error {
+    position: relative;
+    align-items: flex-start;
+    text-align: justify;
+  }

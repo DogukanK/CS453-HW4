@@ -19,12 +19,15 @@ function login() {
             else {
                 //if invalid then put message in the div with id 'error-message'
                 $("#password").focus();
-                $("#error-message").text("Password must be:  \na. consists only numbers, letters, and \"+\", \"@\" " +
-                                                            "\nb. Is longer than 8 characters." +
-                                                            "\nc. Contains at least one upper case letter." +
-                                                            "\nd. Contains at least one lowercase letter." +
-                                                            "\ne. Contains at least one number.");
+                var obj = $("#error-message").text("Password must be:" + "\n" 
+                + "1. At least 8 characters" + "\n" 
+                + "2. At least one uppercase letter" + "\n" 
+                + "3. At least one lowercase letter" + "\n" 
+                + "4. At least one number" + "\n" 
+                + "5. At least one special character (@$+!%*?&)");           
             }
+            //replace the \n with <br>.
+            obj.html(obj.html().replace(/\n/g, '<br />'));
         } else {
             //if invalid then put message in the div with id 'error-message'
             $("#email").focus();
