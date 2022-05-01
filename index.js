@@ -45,7 +45,7 @@ function isValidEmailAddress(emailAddress) {
 //check password is valid or not
 function isValidPassword(password) {
     var pattern = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@+]{8,}$/);
-    if ($.trim(password).length <= 8) {
+    if ($.trim(password).length < 8) {
         $("#password").focus();
         $("#error-message").text("At least 8 characters.");
     }
